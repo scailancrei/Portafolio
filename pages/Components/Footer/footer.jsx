@@ -7,7 +7,7 @@ const Footer = () => {
 
 
     return (
-        <Container fluid style={{ position: 'absolute', bottom: 0 }} >
+        <Container fluid  style={{ position: 'absolute', bottom: 0 }} >
             <div className='footer'>
 
                 <a href="https://www.instagram.com/scailancrei/" target="_blank"><FontAwesomeIcon icon={faInstagram} style={{ width: '35%' }} /></a>
@@ -16,9 +16,12 @@ const Footer = () => {
 
                 <style jsx>{`
                 .footer{
+                    border-top: 1px solid  #0f6ac7;
+                    
+                    
                     height: 10%;
                     display: flex;
-                    background-color: #A2DBFA;
+                    font-size: 100px;
                     
                     justify-content: center;
                     align-items: center;
@@ -28,12 +31,13 @@ const Footer = () => {
                     margin: 30px;
                 }
                 a{
-                    max-width: 35%;
+                    
+                    max-width: 100%;
                     margin-right: 10%;
-                    color: #053742;
+                    color: #0f6ac7;
                 }
                 a:hover{
-                    color: #0f6ac7;
+                    
                 }
                 
 

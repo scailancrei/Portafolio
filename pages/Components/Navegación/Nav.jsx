@@ -23,7 +23,7 @@ const Navegacion = () => {
                     <Navbar.Brand>
                         <Col>
                             <Link href="/">
-                                <a >
+                                <a style={font}>
                                     <FcHome title="Inicio"></FcHome> Home
                                 </a>
                             </Link>
@@ -33,7 +33,7 @@ const Navegacion = () => {
                     <Navbar.Toggle aria-controls='responsive-navbar-nav' />
                     <Navbar.Collapse id="responsive-navbar-nav" className="justify-content-end">
                         <Nav className="mr-auto">
-                            <Link href="/Portafolio">
+                            <Link href="/portafolio">
                                 <a >
                                     Portfolio
                                     <BsCodeSlash />
@@ -41,7 +41,7 @@ const Navegacion = () => {
                             </Link>
 
 
-                            <Link href="/Contact">
+                            <Link href="/contact">
 
                                 <a>
                                     Contacto
