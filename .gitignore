@@ -8,6 +8,9 @@
 ### Ignora cualquier carpeta que se llame requests
 **/requests/ 
 
+### next
+next
+
 # testing
 /coverage
 
