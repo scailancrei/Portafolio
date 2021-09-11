@@ -4,12 +4,12 @@
 /node_modules
 /.pnp
 .pnp.js
+.next
 
 ### Ignora cualquier carpeta que se llame requests
 **/requests/ 
 
-### next
-/next
+
 
 # testing
 /coverage
