@@ -15,7 +15,8 @@
   "description": "Portafolio de Juan Anotonio",
   "main": "index.js",
   "scripts": {
-    "dev": "next dev"
+    "dev": "next dev",
+    "vercel-build": "npm run prepare && next build"
   },
   "repository": {
     "type": "git",

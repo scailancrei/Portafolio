@@ -13,13 +13,16 @@ const Footer = () => {
                 <a href="https://www.instagram.com/scailancrei/" target="_blank"><FontAwesomeIcon icon={faInstagram} style={{ width: '35%' }} /></a>
                 <a href="https://twitter.com/ScaiLanCrei" target="_blank"><FontAwesomeIcon icon={faTwitter} style={{ width: '35%' }} /></a>
                 <a href="https://www.linkedin.com/in/scailancrei61b178176/" target="_blank"><FontAwesomeIcon icon={faLinkedin} style={{ width: '35%' }} /></a>
+                
+
+                
 
                 <style jsx>{`
                 .footer{
                     border-top: 1px solid  #0f6ac7;
                     
                     
-                    height: 10%;
+                    height: 1%;
                     display: flex;
                     font-size: 100px;
                     

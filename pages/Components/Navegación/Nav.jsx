@@ -1,7 +1,8 @@
 import Link from 'next/link'
 import { FcHome } from 'react-icons/fc';
 import { Container, Col, Row, Nav, Navbar } from 'react-bootstrap'
-import {  BsCodeSlash } from 'react-icons/bs'
+import { BsCodeSlash } from 'react-icons/bs'
+import { RiCodeSLine } from 'react-icons/ri'
 import { MdContactMail } from 'react-icons/md'
 
 
@@ -10,7 +11,7 @@ const Navegacion = () => {
     {/**Caracteristicas de la fuente de navegacion */ }
     let font = {
         fontFamily: 'Tangerine',
-        fontSize: '2.5vw',
+        fontSize: '2.75vw',
 
     }
 
@@ -19,7 +20,7 @@ const Navegacion = () => {
         <>
             {/**Barra de navegación */}
             <Navbar bg="primary" expand="md" style={font} >
-                <Container  fluid>
+                <Container fluid>
                     <Navbar.Brand>
                         <Col>
                             <Link href="/">
@@ -33,10 +34,14 @@ const Navegacion = () => {
                     <Navbar.Toggle aria-controls='responsive-navbar-nav' />
                     <Navbar.Collapse id="responsive-navbar-nav" className="justify-content-end">
                         <Nav className="mr-auto">
+                           
                             <Link href="/portafolio">
+
                                 <a >
-                                    Portfolio
-                                    <BsCodeSlash />
+                                    <RiCodeSLine style={{marginRight: '12px'}}/>
+                                        Portfolio
+                                    <BsCodeSlash style={{marginLeft: '12px'}}/>
+
                                 </a>
                             </Link>
 
@@ -45,7 +50,7 @@ const Navegacion = () => {
 
                                 <a>
                                     Contacto
-                                    <MdContactMail />
+                                    <MdContactMail style={{ marginLeft: '12px' }} />
                                 </a>
 
 
@@ -59,11 +64,11 @@ const Navegacion = () => {
                 a{
                     height: 50px;
                     text-align: center;
-                    margin: 30px;
+                    margin: 3px;
                     text-decoration: none;
                     color: white;
-                },
-
+                    
+                }
 
             `}
             </style>
