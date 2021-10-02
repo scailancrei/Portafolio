@@ -1,4 +1,4 @@
-import Layout from './Components/Layout/Layout'
+import Layout from './Components/Layout/layout'
 const Portafolio = () => {
     return (
         <Layout>

@@ -1,5 +1,5 @@
 import { Container } from 'react-bootstrap'
-import Layout from './Components/Layout/layout.jsx'
+import Layout from './Components/Layout/layout'
 
 
 const Index = () => {
