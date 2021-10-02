@@ -8,7 +8,8 @@ const Index = () => {
     return (
         <Layout>
             <Container fluid>
-                <h1>Hola me llamo Juan Antonio</h1>
+                <h1>Hola me llamo Juan Antonio Pérez Lores</h1>
+                <p>Tengo 25 años y soy de Almería.</p>
             </Container>
 
 

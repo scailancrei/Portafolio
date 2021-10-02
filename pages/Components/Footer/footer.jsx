@@ -6,40 +6,43 @@ import { faInstagram, faTwitter, faLinkedin } from '@fortawesome/free-brands-svg
 const Footer = () => {
 
 
+
     return (
-        <Container fluid  style={{ position: 'absolute', bottom: 0 }} >
+        //Contenedor del footer, con una posicion absolute y 0 abajo
+        // Dentro del div footer, una lista con los elementos de las redes con un ancho del 35% del espacio para cada enlace
+        <Container fluid style={{ position: 'absolute', bottom: 0}} >
             <div className='footer'>
 
-                <a href="https://www.instagram.com/scailancrei/" target="_blank"><FontAwesomeIcon icon={faInstagram} style={{ width: '35%' }} /></a>
-                <a href="https://twitter.com/ScaiLanCrei" target="_blank"><FontAwesomeIcon icon={faTwitter} style={{ width: '35%' }} /></a>
-                <a href="https://www.linkedin.com/in/scailancrei61b178176/" target="_blank"><FontAwesomeIcon icon={faLinkedin} style={{ width: '35%' }} /></a>
-                
+                <li>
+                    <a href="https://www.instagram.com/scailancrei/" target="_blank"><FontAwesomeIcon icon={faInstagram} style={{ width: '35%' }} /></a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/ScaiLanCrei" target="_blank"><FontAwesomeIcon icon={faTwitter} style={{ width: '35%' }} /></a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/scailancrei61b178176/" target="_blank"><FontAwesomeIcon icon={faLinkedin} style={{ width: '35%' }} /></a>
+                </li>
 
-                
+
 
                 <style jsx>{`
                 .footer{
-                    border-top: 1px solid  #0f6ac7;
-                    
-                    
-                    height: 1%;
-                    display: flex;
-                    font-size: 100px;
-                    
-                    justify-content: center;
+                    border-top: 1px solid  #0f6ac7;                    
+                    height: 5%;
+                    display: grid;
+                    grid-template-columns: repeat(3, 15%); /**Un grid basado en 3 columnas al que se le otorga un 15% de ancho */
+                    justify-content: space-between;
                     align-items: center;
                     
-                }
-                .faInstagram{
-                    margin: 30px;
-                }
-                a{
                     
-                    max-width: 100%;
-                    margin-right: 10%;
+                },
+                li{                    
+                    list-style-type: none;
+                },
+                a{
+                    text-align: center;
+                    font-size: 70px;
                     color: #0f6ac7;
-                }
-                a:hover{
                     
                 }
                 
