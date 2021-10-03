@@ -30,7 +30,7 @@ const Navegacion = () => {
 
 
                     <Navbar.Toggle  aria-controls='responsive-navbar-nav' />
-                    <Navbar.Collapse   as="nav" id="responsive-navbar-nav" className="justify-content-end">
+                    <Navbar.Collapse  as="nav" id="responsive-navbar-nav" className="justify-content-end">
                         <Link href="/portafolio">
                             <a >
                                 <RiCodeSLine style={{ marginRight: '10px' }} />
@@ -67,19 +67,8 @@ const Navegacion = () => {
                 @media only screen and (max-width: 600px) { 
                     * {
                         font-size: 6vw;
-                    },
-                    .justify-content-end{
-                        height: 300%;
-                        width: 0;
-                        position: fixed;
-                        z-index: 1;
-                        top: 0;
-                        right: 0;
-                        background-color: #111;
-                        overflow-x: hidden;
-                        transition: 0.5s;
-                        padding-top: 60px;
                     }
+                    
                   }
             `}
                 </style>
