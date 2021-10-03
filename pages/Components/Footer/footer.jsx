@@ -10,7 +10,7 @@ const Footer = () => {
     return (
         //Contenedor del footer, con una posicion absolute y 0 abajo
         // Dentro del div footer, una lista con los elementos de las redes con un ancho del 35% del espacio para cada enlace
-        <Container fluid style={{ position: 'absolute', bottom: 0}} >
+        <Container fluid style={{ position: 'absolute', bottom: 0 }} >
             <div className='footer'>
 
                 <li>
@@ -34,7 +34,6 @@ const Footer = () => {
                     justify-content: space-between;
                     align-items: center;
                     
-                    
                 },
                 li{                    
                     list-style-type: none;
@@ -43,7 +42,11 @@ const Footer = () => {
                     text-align: center;
                     font-size: 70px;
                     color: #0f6ac7;
-                    
+                    text-decoration: none;
+                    opacity: 2;
+                }
+                a:hover{
+                    color: #2e314b;
                 }
                 
 
