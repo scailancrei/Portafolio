@@ -6,7 +6,6 @@ import { faInstagram, faTwitter, faLinkedin } from '@fortawesome/free-brands-svg
 const Footer = () => {
 
 
-
     return (
         //Contenedor del footer, con una posicion absolute y 0 abajo
         // Dentro del div footer, una lista con los elementos de las redes con un ancho del 35% del espacio para cada enlace

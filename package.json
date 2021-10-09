@@ -6,9 +6,11 @@
     "bootswatch": "^5.1.1",
     "next": "^11.1.2",
     "react": "^17.0.2",
+    "react-animations": "^1.0.0",
     "react-bootstrap": "^2.0.0-beta.6",
     "react-dom": "^17.0.2",
-    "react-icons": "^4.2.0"
+    "react-icons": "^4.2.0",
+    "styled-components": "^5.3.1"
   },
   "name": "portfolio",
   "version": "1.0.0",
