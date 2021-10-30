@@ -1,7 +1,6 @@
 import 'bootswatch/dist/darkly/bootstrap.min.css'
-
 import Navegacion from '../Navegación/Nav'
-import Head from '../../head'
+import Head from '../head'
 import Footer from '../Footer/footer'
 import { Container } from 'react-bootstrap'
 
@@ -9,7 +8,6 @@ import { Container } from 'react-bootstrap'
 //Si el estado inicial es false entra en el index.
 const Layout = ({ children }) => {
 
-    
     return (
 
         <main>
@@ -20,21 +18,17 @@ const Layout = ({ children }) => {
                     {children}
                 </Container>
             </div>
-
+          
 
             <Footer />
 
             <style jsx>{`
 
-            
-        
             .main-container{
-                
                 display: grid;
                 grid-template-columns: repeat(1fr, 50%);
                 position: relative;
                 
-                           
             }
 
             .main-container::after{

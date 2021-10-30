@@ -6,18 +6,31 @@ import { Container, Button } from 'react-bootstrap'
 import { useState } from 'react'
 
 
+
+//Componente del efecto rebotar para la presentación
 const bounceAnimation = keyframes`${bounceIn}`
 
 const BouncyDiv = styled.div`
     animation: 2s ${bounceAnimation};
     `
 
+//Componente del efecto deslizante para la foto y ponerle un borde redondo
 const fadeInAnimation = keyframes`${fadeInLeft}`
 
 const FadeDiv = styled.div`
-    animation: 5s ${fadeInAnimation};
-    animation-delay: 3;
-  `
+margin-right: 5vw;
+margin-left: 5vw;
+animation: 5s ${fadeInAnimation};
+animation-delay: 3;
+
+.imagen{
+    border-radius: 50%;   
+}
+`
+
+
+
+
 
 
 
@@ -25,25 +38,47 @@ const FadeDiv = styled.div`
 //La portada de la web al entrar
 //Si se pulsa el botón de entrar cambia el estado de la portada a false y entramos en el layout
 const Portada = ({ cambiarEstado }) => {
-
+    
     return (
+        <div className="bg-img">
+            <FadeDiv>
+                <Image className="imagen" src={'/mi foto.jpg'} width={'200px'} height={'200px'} />
+            </FadeDiv>
 
-        <Container fluid style={{ display: 'flex', justifyContent: 'space-around' }}>
-            
-                <FadeDiv>
-                    <Image src={'/mi foto.jpg'} width={'100px'} height={'100px'} ></Image>
-                </FadeDiv>
-            
             <BouncyDiv>
                 <h1>Hola me llamo Juan Antonio Pérez Lores</h1>
-                <p>Tengo 25 años y soy de Almería.</p>
-
-                <Button variant="primary" onClick={cambiarEstado}>Entrar</Button>
+                <p>Soy Web Developer.</p>
+                <p>Para saber mas de mi pulsa aqui</p>
+                <Button style={{ position: 'relative' }} variant="primary" onClick={cambiarEstado}>Entrar</Button>
             </BouncyDiv>
 
+            <style jsx>{`
+                
+                .bg-img{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 100vh;
+                    position: relative;                    
+                }
 
+                .bg-img::before{
+                    opacity: 0.25;
+                    content: "";
+                    position: absolute;
+                    background-repeat: no-repeat;
+                    background-image: url('/fondo.jpg');
+                    background-size: cover;
+                    background-position: top center;
+                    top: 0px;
+                    right: 0px;
+                    bottom: 0px;
+                    left: 0px;
 
-        </Container>
+                }
+                `}</style>
+        </div>
+
 
 
     )
@@ -56,7 +91,7 @@ const Index = () => {
     const [estado, setEstado] = useState(false)
 
     const handleEstado = () => {
-        setEstado(!estado)
+        setEstado(true)
     }
 
     return (
@@ -66,8 +101,6 @@ const Index = () => {
                 ? <Layout />
                 : <Portada cambiarEstado={handleEstado} />
             }
-
-
 
         </>
 
