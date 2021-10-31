@@ -2,7 +2,7 @@ import Layout from './Components/Layout/layout'
 import Image from 'next/image'
 import styled, { keyframes } from 'styled-components';
 import { bounceIn, fadeInLeft } from 'react-animations';
-import { Container, Button } from 'react-bootstrap'
+import {Button } from 'react-bootstrap'
 import { useState } from 'react'
 
 
@@ -31,10 +31,6 @@ animation-delay: 3;
 
 
 
-
-
-
-
 //La portada de la web al entrar
 //Si se pulsa el botón de entrar cambia el estado de la portada a false y entramos en el layout
 const Portada = ({ cambiarEstado }) => {
@@ -46,10 +42,10 @@ const Portada = ({ cambiarEstado }) => {
             </FadeDiv>
 
             <BouncyDiv>
-                <h1>Hola me llamo Juan Antonio Pérez Lores</h1>
-                <p>Soy Web Developer.</p>
-                <p>Para saber mas de mi pulsa aqui</p>
-                <Button style={{ position: 'relative' }} variant="primary" onClick={cambiarEstado}>Entrar</Button>
+                <h1>Hola me llamo Juan Antonio Pérez Lores 👋</h1>
+                <h3>Soy Desarrollador Web. 👨‍💻</h3>
+                <h4>Si quieres saber mas de mi entra aquí 👇</h4>
+                <Button style={{ position: 'relative'}} variant="primary" onClick={cambiarEstado}>Entrar</Button>
             </BouncyDiv>
 
             <style jsx>{`
