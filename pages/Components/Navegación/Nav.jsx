@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import { FcHome } from 'react-icons/fc';
-import { Container, Col, Row, Nav, Navbar } from 'react-bootstrap'
+import { Container, Navbar } from 'react-bootstrap'
 import { BsCodeSlash } from 'react-icons/bs'
 import { RiCodeSLine } from 'react-icons/ri'
 import { MdContactMail } from 'react-icons/md'

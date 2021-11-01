@@ -2,9 +2,9 @@ import Layout from './Components/Layout/layout'
 import Image from 'next/image'
 import styled, { keyframes } from 'styled-components';
 import { bounceIn, fadeInLeft } from 'react-animations';
-import {Button } from 'react-bootstrap'
+import { Button, Container } from 'react-bootstrap'
 import { useState } from 'react'
-
+import {RiDoorOpenFill} from 'react-icons/ri'
 
 
 //Componente del efecto rebotar para la presentación
@@ -34,7 +34,7 @@ animation-delay: 3;
 //La portada de la web al entrar
 //Si se pulsa el botón de entrar cambia el estado de la portada a false y entramos en el layout
 const Portada = ({ cambiarEstado }) => {
-    
+
     return (
         <div className="bg-img">
             <FadeDiv>
@@ -42,10 +42,10 @@ const Portada = ({ cambiarEstado }) => {
             </FadeDiv>
 
             <BouncyDiv>
-                <h1>Hola me llamo Juan Antonio Pérez Lores 👋</h1>
+                <h1 >Hola me llamo Juan Antonio Pérez Lores 👋</h1>
                 <h3>Soy Desarrollador Web. 👨‍💻</h3>
-                <h4>Si quieres saber mas de mi entra aquí 👇</h4>
-                <Button style={{ position: 'relative'}} variant="primary" onClick={cambiarEstado}>Entrar</Button>
+                
+                 <Button style={{ position: 'relative', fontSize: '25px' }} variant="primary" onClick={cambiarEstado}><RiDoorOpenFill style={{ marginRight: '5px'}}/>Entrar</Button>
             </BouncyDiv>
 
             <style jsx>{`
@@ -92,11 +92,39 @@ const Index = () => {
 
     return (
         <>
-
+            
             {estado
                 ? <Layout />
                 : <Portada cambiarEstado={handleEstado} />
             }
+            
+
+            <Container fluid style={{ marginTop: '4%',maxWidth: '100vh' , maxHeight: '35vh', overflow: 'auto', border: '2px solid', msOverflowStyle: 'scrollbar'}}>
+            <h1>Hola</h1>
+            <h1>Hola</h1>
+            <h1>Hola</h1>
+            <h1>Hola</h1>
+            <h1>Hola</h1>
+            <h1>Hola</h1>
+            <h1>Hola</h1>
+            <h1>Hola</h1>
+            <h1>Hola</h1>
+            <h1>Hola</h1>
+            <h1>Hola</h1>
+            <h1>Hola</h1>
+            <h1>Hola</h1>
+            <h1>Hola</h1>
+
+            <h1>Hola</h1>
+            <h1>Hola</h1>
+            <h1>Hola</h1>
+            <h1>Hola</h1>
+            <h1>Hola</h1>
+
+            
+            <h1>UWU</h1>
+            </Container>
+
 
         </>
 
