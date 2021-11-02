@@ -26,12 +26,15 @@ const Footer = () => {
 
                 <style jsx>{`
                 .footer{
+                    box-sizing: border-box;
                     border-top: 1px solid  #0f6ac7;                    
-                    height: 15vh;
+                    max-height: 100vh;
                     display: grid;
                     grid-template-columns: repeat(3, 15%); /**Un grid basado en 3 columnas al que se le otorga un 15% de ancho */
                     justify-content: space-between;
                     align-items: center;
+                    position: relative;
+                    
                     
                 },
                 li{                    
