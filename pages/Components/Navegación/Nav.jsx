@@ -21,28 +21,34 @@ const Navegacion = () => {
                 <Container fluid>
                     <Navbar.Brand>
 
-                        <Link href="/">
-                            <a style={font}>
-                                <FcHome title="Inicio"></FcHome> Home
-                            </a>
+                        <Link legacyBehavior href="/">
+                            <div>
+                            <FcHome title="Inicio"></FcHome> Home
+                            </div>
+                                
+                            
                         </Link>
                     </Navbar.Brand>
 
 
                     <Navbar.Toggle  aria-controls='responsive-navbar-nav' />
                     <Navbar.Collapse  as="nav" id="responsive-navbar-nav" className="justify-content-end">
-                        <Link href="/portafolio">
-                            <a >
+                        <Link legacyBehavior href="/portafolio">
+                           <div>
                                 <RiCodeSLine style={{ marginRight: '10px' }} />
                                 Portfolio
                                 <BsCodeSlash style={{ marginLeft: '10px' }} />
-                            </a>
+                           </div>
+                               
+                            
                         </Link>
-                        <Link href="/contact">
-                            <a>
-                                Contacto
+                        <Link legacyBehavior href="/contact">
+                            <div>
+                            Contacto
                                 <MdContactMail style={{ marginLeft: '12px' }} />
-                            </a>
+                            </div>
+                                
+                            
                         </Link>
                     </Navbar.Collapse>
                 </Container>

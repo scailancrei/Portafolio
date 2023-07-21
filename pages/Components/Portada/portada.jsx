@@ -6,8 +6,6 @@ import { RiDoorOpenFill } from 'react-icons/ri'
 
 
 
-
-
 //Componente del efecto rebotar para la presentación
 const bounceAnimation = keyframes`${bounceIn}`
 
@@ -30,8 +28,6 @@ animation-delay: 3;
 `
 
 
-
-
 //La portada de la web al entrar
 //Si se pulsa el botón de entrar cambia el estado de la portada a false y entramos en el layout
 const Portada = ({ cambiarEstado }) => {
@@ -39,7 +35,7 @@ const Portada = ({ cambiarEstado }) => {
     return (
         <div className="bg-img">
             <FadeDiv>
-                <Image className="imagen" src={'/mi foto.jpg'} width={'200px'} height={'200px'} />
+                <Image className="imagen" src={'/mi foto.jpg'} width={200} height={200} />
             </FadeDiv>
 
             <BouncyDiv>

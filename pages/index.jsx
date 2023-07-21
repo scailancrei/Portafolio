@@ -6,8 +6,6 @@ import Portada from './Components/Portada/portada'
 
 
 
-
-
 //Componente principal de Index donde se gestiona el estado de la portada y el layout.
 const Index = () => {
 
@@ -27,9 +25,7 @@ const Index = () => {
                         <h1>Hola</h1>
                         <h1>Hola</h1>
                         <h1>Hola</h1>
-                        <h1>Hola</h1>
-                        <h1>Hola</h1>
-                        <h1>Hola</h1>
+                        
                         
                     </Container>
                 </Layout>
