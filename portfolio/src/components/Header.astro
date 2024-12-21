@@ -1,0 +1,32 @@
+---
+import About from "./About.astro"
+import Links from "./Links.astro"
+---
+
+<header
+  class="text-center grid gap-2 grid-cols-1 row-span-3 ml-4 mr-4 sm:justify-center auto-rows-min sm:align-middle"
+>
+  <div class="flex justify-end gap-x-5 text-right lg:justify-center">
+    <Links />
+  </div>
+
+
+  <div class="sm:h-10 m-10">
+    <h1 class="text-3xl sm:text-4xl">Juan Antonio Pérez Lores</h1>
+  </div>
+
+  <div
+    id="about me"
+    class="grid gap-7 grid-rows-[min-content_1fr] sm:grid-cols-[min-content_1fr] justify-items-center"
+  >
+    <figure class="size-32 sm:size-52">
+      <img src="/mi foto.jpg" class="filter" />
+    </figure>
+    <section
+      class="bg-slate-400 rounded-s-xl max-w-[max-content] hover:shadow-2xl shadow-cyan-700 sm:max-w-[80%] sm:text-3xl"
+    >
+      <span class="text-3xl">FullStack Developer</span>
+      <About />
+    </section>
+  </div>
+</header>
