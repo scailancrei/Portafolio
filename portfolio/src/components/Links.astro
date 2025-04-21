@@ -1,9 +1,16 @@
 ---
-
+const { links } = Astro.props
 ---
 
 
-<div class="flex justify-end gap-x-5 text-right ">   
-  <a href="#About">Sobre mi</a>
-  <a href="#Contact">Contacto</a>
-</div>
+<nav class="flex  justify-center gap-x-5 text-right rounded-xl">
+  <div class="flex flex-col gap-y-2 sm:flex-row fixed sm:gap-x-2">
+    {links.map((link) => (
+      <div class="flex justify-end bg-slate-500 rounded-xl p-2">
+        <a href={link.url} aria-label={link.label} class="text-xl hover:text-white">{link.title}</a>
+      </div>
+    ))} 
+  </div>
+    
+ 
+</nav>

@@ -1,35 +1,59 @@
 ---
 import About from "./About.astro"
 import Links from "./Links.astro"
+
+
+const links = [
+  { 
+    url: "/#About",
+    title: "About me",
+    label: "about", 
+ },
+  { url: "/#Projects",
+    title: "Projects",
+    label: "projects" },
+  { url: "/#Contact",
+    title: "Contact",
+    label: "contact"},
+]
 ---
 
 <header
   class="text-center  grid gap-2 grid-cols-1 row-span-3  sm:justify-center auto-rows-min sm:align-middle p-10"
 >
-  <div class="flex justify-end gap-x-5 text-right ">
-    <Links />
-  </div>
-
-
-  <div id='title' class="sm:h-10 m-10">
+  <Links links={links} />
+  
+  <div id='title' class="sm:h-10 sm:m-10">
     <h1 class="text-3xl sm:text-4xl"> Hi, I'm Juan Antonio Pérez Lores 👋</h1>
   </div>
 
-  <div id="about me"
+  <section id="about me"
     class="grid gap-7 grid-rows-[min-content_1fr] sm:grid-cols-[min-content_1fr, max-content_1fr] justify-items-center"
   >
-  <section id="photo" class="">
+  <div id="photo">
     <figure class="size-32  sm:size-48 ">
       <img src="/mi foto.jpg" class="filter object-cover rounded-full" />
     </figure>
-  </section>
+  </div>
       
-    <section
-    id="about"
+    <div
       class="shadow-2xl  sm:text-3xl "
     >
-    
       <About />
-    </section>
-  </div>
+    </div>
+  </section>
 </header>
+
+
+<script>
+  document.addEventListener('astro:page-load  ', () => {
+    const title = document.getElementById('title')
+    const about = document.getElementById('header nav a')
+
+    const callBack = () => {
+
+
+    }
+    
+  })
+</script>
