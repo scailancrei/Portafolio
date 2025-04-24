@@ -1,18 +1,34 @@
 ---
-
+import { Image } from "astro:assets";
+const { imgWidth, imgHeight } = Astro.props;
 ---
 
-<section class="bg-gray-100 text-black grid grid-cols-1 grid-rows-2 *:m-2 ">
-  <section class="flex justify-center">
-    <h1>My projects</h1>
-  </section>
-  <section class="flex justify-center">
-    <h1>My projects</h1>
-  </section><section class="flex justify-center">
-    <h1>My projects</h1>
-  </section><section class="flex justify-center">
-    <h1>My projects</h1>
-  </section>
+<section class="bg-gray-100 text-black grid grid-cols-2 grid-rows-1 *:m-2 ">
+  <div class="row-span-1 col-span-2 flex gap-5 items-center justify-center text-2xl">
+    <Image src='/icons/html_marks.svg' alt="Project 1" width="30" height="20"/>
+    <h1>Projects</h1>
+    <Image src='/icons/html_marks.svg' alt="Project 1" width="30" height="20"/>
+  </div>
 
+  <article class="row-span-1 col-span-2 flex flex-col gap-5 p-20 sm:p-12 md:flex-row">
+    <Image src="/chat.png" alt="Project 1" width={imgWidth} height={imgHeight}/>
+    <div>
+      <h2 class="text-2xl">Chat room web</h2>
+      <p></p>
+      <p class="text-xl">TECHNOLOGIES: </p>
+      
+
+    </div>
+   
+  </article>
+  <article class="row-span-1 col-span-2 flex flex-col gap-5 p-20 sm:p-12 md:flex-row">
+    <Image src="/chat.png" alt="Project 1" width={imgWidth} height={imgHeight}/>  
+    <div>
+      <h2 class="text-2xl">E-COMMERCE</h2>
+      <p class="text-xl">TECHNOLOGIES: </p>
+    </div>
+    
+  </article>
+  
  
 </section>
